@@ -4,8 +4,8 @@ import (
 	"log"
 	"sync"
 
-	"../feed"
-	"../feed/clients"
+	feed "github.com/gguerrero/godemand/xorchestrator/feed"
+	client "github.com/gguerrero/godemand/xorchestrator/feed/clients"
 )
 
 type Result struct {
@@ -13,7 +13,7 @@ type Result struct {
 	Response feed.Retriever
 }
 
-func RunRequestAndProcess(feeds []feed.Feed) {
+func RunRequestsAndProcess(feeds []feed.Feed) {
 	// Make an unbuferred channel, so we don't enqueue any result
 	resultsChan := make(chan *Result)
 

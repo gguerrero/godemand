@@ -15,5 +15,5 @@ func init() {
 
 func main() {
 	selectedFeeds := feed.Select(feeds, os.Args[1:])
-	multix.RunRequestAndProcess(selectedFeeds)
+	multix.RunRequestsAndProcess(selectedFeeds)
 }
