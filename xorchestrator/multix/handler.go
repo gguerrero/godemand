@@ -4,8 +4,8 @@ import (
 	"log"
 	"sync"
 
-	feed "github.com/gguerrero/godemand/xorchestrator/feed"
-	client "github.com/gguerrero/godemand/xorchestrator/feed/clients"
+	"../feed"
+	client "../feed/clients"
 )
 
 type Result struct {
