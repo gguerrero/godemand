@@ -13,7 +13,7 @@ type Result struct {
 	Response feed.Retriever
 }
 
-func RunRequestsAndProcess(feeds []feed.Feed) {
+func RunRequestsAndProcess(feeds []feed.Feed) map[string][]feed.Retriever {
 	// Make an unbuferred channel, so we don't enqueue any result
 	resultsChan := make(chan *Result)
 
@@ -33,7 +33,7 @@ func RunRequestsAndProcess(feeds []feed.Feed) {
 	go waitAndCloseChan(&waitGroup, resultsChan)
 
 	// Will dynamically display the results and process them while receiving
-	processResults(resultsChan)
+	return processResults(resultsChan)
 }
 
 func runRequest(feed feed.Feed, waitGroup *sync.WaitGroup, channel chan<- *Result) {
@@ -60,8 +60,13 @@ func waitAndCloseChan(waitGroup *sync.WaitGroup, channel chan *Result) {
 	close(channel)
 }
 
-func processResults(results <-chan *Result) {
+func processResults(results <-chan *Result) map[string][]feed.Retriever {
+	aggregatedResults := make(map[string][]feed.Retriever)
+
 	for result := range results {
-		log.Printf("%v result: %+v", result.FeedName, result.Response)
+		aggregatedResults[result.FeedName] = append(aggregatedResults[result.FeedName], result.Response)
+		log.Print(result.FeedName, " result processed!")
 	}
+
+	return aggregatedResults
 }
