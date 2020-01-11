@@ -1,0 +1,36 @@
+[
+  {
+    "id": "123456789asdf",
+    "customer_id": "987654321fdsa",
+    "type": "credit",
+    "last4digit": "1234",
+    "provider": "checkout",
+    "card_token": "tok-12345",
+    "customer_token": "cust-12345",
+    "card_holder_name": "Mena Enegery",
+    "expiry_month": "9",
+    "expiry_year": "2022",
+    "name": "My CARD",
+    "is_default": true,
+    "status": "active",
+    "createdAt": "2020-01-01T10:00:00Z",
+    "updatedAt": "2020-01-01T10:00:00Z"
+  },
+  {
+    "id": "123456789asdf",
+    "customer_id": "987654321fdsa",
+    "type": "debit",
+    "last4digit": "1235",
+    "provider": "checkout",
+    "card_token": "tok-12345",
+    "customer_token": "cust-12345",
+    "card_holder_name": "Mena Enegery",
+    "expiry_month": "9",
+    "expiry_year": "2022",
+    "name": "Emirates NBD",
+    "is_default": false,
+    "status": "active",
+    "createdAt": "2020-01-01T10:00:00Z",
+    "updatedAt": "2020-01-01T10:00:00Z"
+  }
+]

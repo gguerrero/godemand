@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "customer_id": "987654321fdsa",
+    "market_id": "1234567890",
+    "isDefault": true,
+    "name": "Work",
+    "note": "This is where I work",
+    "address": {
+      "line1": "Emaar Square Bld. 2",
+      "city": "Dubai",
+      "country": "UAE",
+      "postcode": "001"
+    },
+    "lat": "1.122122",
+    "long": "2.331231",
+    "createdAt": "2020-01-01T10:00:00Z",
+    "updatedAt": "2020-01-07T07:30:00Z"
+  },
+  {
+    "id": 2,
+    "customer_id": "987654321fdsa",
+    "market_id": "1234567890",
+    "isDefault": false,
+    "name": "Home",
+    "note": "Home, sweet home",
+    "address": {
+      "line1": "Marina",
+      "city": "Dubai",
+      "country": "UAE",
+      "postcode": "001"
+    },
+    "lat": "1.122122",
+    "long": "2.331231",
+    "createdAt": "2020-01-01T10:00:00Z",
+    "updatedAt": "2020-01-07T07:30:00Z"
+  }
+]

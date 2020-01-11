@@ -1,0 +1,17 @@
+{
+  "listAddressBooks": {
+    "action": "listAddressBooks",
+    "url": "http://localhost:4001/demand/address_books",
+    "method": "GET"
+  },
+  "listPaymentMethods": {
+    "action": "listPaymentMethods",
+    "url": "http://localhost:4002/demand/payment_methods",
+    "method": "GET"
+  },
+  "listServiceableAssets": {
+    "action": "listServiceableAssets",
+    "url": "http://localhost:4003/demand/serviceable_assets",
+    "method": "GET"
+  }
+}

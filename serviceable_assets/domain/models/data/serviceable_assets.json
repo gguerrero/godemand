@@ -1,0 +1,72 @@
+[
+  {
+    "id": "123456789asdf",
+    "name": "Speedster",
+    "type": "Car",
+    "customer_id": "987654321fdsa",
+    "notes": "Some notes about the car",
+    "info": {
+      "model": "1-Series",
+      "make": "BMW",
+      "color": "Red",
+      "fuel_type": "Special95",
+      "registration": {
+        "country": "UAE",
+        "zone": "DXB",
+        "year": 1995,
+        "month": "09",
+        "day": "01",
+        "number": "plate-number",
+        "code": "some-plate-id"
+      }
+    },
+    "createdAt": "2020-01-01T10:00:00Z",
+    "updatedAt": "2020-01-01T10:00:00Z"
+  },
+  {
+    "id": "asset-id-2",
+    "name": "Speedster-2",
+    "type": "Car",
+    "customer_id": "987654321fdsa",
+    "notes": "Some notes about the car",
+    "info": {
+      "model": "1-Series",
+      "make": "BMW",
+      "color": "Red",
+      "fuel_type": "Special95",
+      "registration": {
+        "country": "UAE",
+        "zone": "DXB",
+        "year": 1995,
+        "month": "09",
+        "day": "01",
+        "number": "plate-number",
+        "code": "some-plate-id"
+      }
+    },
+    "createdAt": "2020-01-01T10:00:00Z",
+    "updatedAt": "2020-01-01T10:00:00Z"
+  },
+  {
+    "customer_id": "987654321fdsa",
+    "id": "asset-id",
+    "name": "Titanic",
+    "type": "Boat",
+    "note": "Some notes about the boat",
+    "info": {
+      "craft_type": "Jet-Ski",
+      "fuel_type": "Special95",
+      "registration": {
+        "country": "UAE",
+        "zone": "DXB",
+        "year": 1995,
+        "month": "09",
+        "day": "01",
+        "number": "boat-number",
+        "code": "boat-id"
+      }
+    },
+    "createdAt": "2020-01-01T10:00:00Z",
+    "updatedAt": "2020-01-01T10:00:00Z"
+  }
+]
